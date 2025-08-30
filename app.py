@@ -105,6 +105,8 @@ def index() -> str:
     """
     return render_template('index.html', book_languages=_SUPPORTED_BOOK_LANGUAGE, default_language=BOOK_LANGUAGE, debug=DEBUG)
 
+ 
+
 @app.route('/favico<path:_>')
 @app.route('/request/favico<path:_>')
 @app.route('/request/static/favico<path:_>')
