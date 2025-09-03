@@ -13,7 +13,7 @@ rm -rf $LOG_DIR/*
 )
 
 exec 3>&1 4>&2
-exec > >(tee -a $LOG_FILE) 2>&1
+exec >> "$LOG_FILE" 2>&1
 echo "Starting entrypoint script"
 echo "Log file: $LOG_FILE"
 set -e
