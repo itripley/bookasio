@@ -40,7 +40,6 @@ RUN apt-get update && \
     curl \
     # For entrypoint
     dumb-init \
-    bash \
     # For debug
     zip iputils-ping \
     # For user switching
@@ -63,8 +62,6 @@ WORKDIR /app
 # Install Python dependencies using pip
 # Upgrade pip first, then copy requirements and install
 # Copying requirements-base.txt separately leverages build cache
-COPY entrypoint.sh /app/entrypoint.sh
-COPY app.py /app/app.py
 COPY requirements-base.txt .
 RUN pip install --no-cache-dir -r requirements-base.txt && \
     # Clean root's pip cache
