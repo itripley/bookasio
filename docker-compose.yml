@@ -1,6 +1,6 @@
 services:
   bokasio:
-    image: oliviacarmo/bookasio:latest
+    image: oliviacarmo/bookasio
     # Uncomment to build the image from the Dockerfile for local testing changes.
     # Remember to comment out the image line above.
     #build: .
