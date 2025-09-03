@@ -19,7 +19,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     PIP_NO_CACHE_DIR=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
     PIP_DEFAULT_TIMEOUT=100 \
-    NAME=Calibre-Web-Automated-Book-Downloader \
+    NAME=bookasio \
     PYTHONPATH=/app \
     # UID/GID will be handled by entrypoint script, but TZ/Locale are still needed
     LANG=en_US.UTF-8 \
