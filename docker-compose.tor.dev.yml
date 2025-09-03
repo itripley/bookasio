@@ -1,8 +1,8 @@
 services:
-  calibre-web-automated-book-downloader-tor-dev:
+  bookasio-tor-dev:
     extends:
       file: ./docker-compose.tor.yml
-      service: calibre-web-automated-book-downloader-tor
+      service: bookasio-tor
     build:
       context: .
       dockerfile: Dockerfile
