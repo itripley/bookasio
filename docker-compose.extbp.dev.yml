@@ -1,9 +1,9 @@
 services:
-  calibre-web-automated-book-downloader-extbp-dev:
+  bookasio-extbp-dev:
     container_name: cwa-bd-extbp-dev
     extends:
       file: ./docker-compose.extbp.yml
-      service: calibre-web-automated-book-downloader-extbp
+      service: bookasio-extbp
     build:
       context: .
       dockerfile: Dockerfile
