@@ -55,7 +55,7 @@ echo "Username for UID $UID is $USERNAME"
 
 test_write() {
     folder=$1
-    test_file=$folder/calibre-web-automated-book-downloader_TEST_WRITE
+    test_file=$folder/bookasio_TEST_WRITE
     mkdir -p $folder
     (
         echo 0123456789_TEST | sudo -E -u "$USERNAME" HOME=/app tee $test_file > /dev/null
