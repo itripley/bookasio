@@ -1,8 +1,8 @@
 services:
-  calibre-web-automated-book-downloader-dev:
+  bookasio-dev:
     extends:
       file: ./docker-compose.yml
-      service: calibre-web-automated-book-downloader
+      service: bookasio
     build:
       context: .
       dockerfile: Dockerfile
